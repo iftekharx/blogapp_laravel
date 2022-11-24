@@ -1,0 +1,54 @@
+.navbar, .navbar-nav > li > a, .dropdown-menu {
+    background-color: orangered;
+   
+    
+}
+
+.navbar-brand{
+
+    color: black;
+}
+
+.nav-item{
+    color: yellow;
+}
+
+.nav-item:hover{
+    color: black;
+}
+
+body{
+    background-color: lightgoldenrodyellow;
+
+}
+
+.header-text{
+    background-color: palegoldenrod;
+}
+
+.card{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: peachpuff;
+}
+.custom-header{
+    font-size: 50px;
+    font-style: bold;
+}
+.card-custom{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 50px;
+    background-color: white;
+}
+
+.btn-custom:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+.btn-custom{
+    background-color: darkred;
+    color: white;
+}
