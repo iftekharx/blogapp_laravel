@@ -52,3 +52,9 @@ body{
     background-color: darkred;
     color: white;
 }
+
+.custom-textarea{
+    width: 100%;
+    height: 1000px;
+    background-color: papayawhip;
+}

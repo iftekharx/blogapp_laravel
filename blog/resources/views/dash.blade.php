@@ -10,7 +10,7 @@
         <div class="card-body">
             <p>{{$blog['created_at']}} By User {{$blog['username']}}</p>
             {{substr($blog['body'], 0, 1000)."...."}}
-            <button>Read More! >> </button>
+            <a href="{{route('blogfetch', ['blogid' => $blog['id']])}}">Read More! >> </a>
             
         </div>
     </div>

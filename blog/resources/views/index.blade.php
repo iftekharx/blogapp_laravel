@@ -21,6 +21,7 @@
             <div class="navbar-nav">
                 <a href="{{route("index")}}" class="nav-item nav-link active">Home</a>
                 <a href="{{route('blogfeed')}}" class="nav-item nav-link">Blogs</a>
+                <a href="{{route('create-blog')}}" class="nav-item nav-link">Create Blog</a>
                 <a href="#" class="nav-item nav-link">About</a>
                 <a href="#" class="nav-item nav-link">Contact</a>
             </div>

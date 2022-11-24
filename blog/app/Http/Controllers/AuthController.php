@@ -81,7 +81,7 @@ class AuthController extends Controller
         
         if(Auth::check()){
 
-            $blogs = Blog::all();
+            $blogs = Blog::all()->sortByDesc("created_at");
 
 
 
@@ -121,4 +121,6 @@ class AuthController extends Controller
   
         return Redirect('login');
     }
+
+    
 }
