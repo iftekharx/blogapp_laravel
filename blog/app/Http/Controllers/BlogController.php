@@ -40,6 +40,13 @@ class BlogController extends Controller
 
     }
 
+    public function search(Request $request){
+
+        $blogs = Blog::where('title','LIKE',"%{$request['search']}%")->orWhere('body','LIKE',"%{$request['search']}%")->get();
+
+        return view('search_blog', ['blogs' => $blogs ]);
+
+    }
     public function post_blog(Request $request){
          $request->validate([
             'title' => 'required',

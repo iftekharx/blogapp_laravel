@@ -12,19 +12,17 @@
                 <div class="input-group mb-4">
                    
                     
-                        <label for="name" class="col-md-4 col-form-label text-md-right">Search Blog: </label>
-                        <input type="text" id="search" class="form-control" name="search"/>
-                        <button type="submit" class="form-control btn btn-primary">
-                            Go!
-                        </button>
-                       
-                  
-                </div>
-               
+                    <label for="name" class="col-md-4 col-form-label text-md-right">Search Blog: </label>
+                    <input type="text" id="search" class="form-control" name="search"/>
+                    <button type="submit" class="form-control btn btn-primary">
+                        Go!
+                    </button>
+                   
+              
+            </div>
            
             
         </div>
-        
     </div>
     
         @foreach($blogs as $blog)
