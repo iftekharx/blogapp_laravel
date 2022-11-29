@@ -10,7 +10,7 @@
                     <div class="card-header">Register New User</div>
                     <div class="card-body">
     
-                        <form action="{{ route('register.post') }}" method="POST">
+                        <form action="{{ route('register.post') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group row">
                                 <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
@@ -50,6 +50,14 @@
                                         <span class="text-danger">{{ $errors->first('password') }}</span>
                                     @endif
                                 </div>
+                            </div>
+                            @csrf
+                            <div class="form-group row">
+                                <strong>Profile Image:</strong>
+                                <input type="file" name="image" class="form-control" placeholder="image">
+                                @if ($errors->has('name'))
+                                        <span class="text-danger">{{ $errors->first('image') }}</span>
+                                    @endif
                             </div>
     
                             <div class="form-group row">

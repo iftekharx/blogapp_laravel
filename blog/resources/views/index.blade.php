@@ -22,7 +22,6 @@
                 <a href="{{route("index")}}" class="nav-item nav-link active">Home</a>
                 <a href="{{route('blogfeed')}}" class="nav-item nav-link">Blogs</a>
                 <a href="{{route('create-blog')}}" class="nav-item nav-link">Create Blog</a>
-                <a href="#" class="nav-item nav-link">About</a>
                 <a href="#" class="nav-item nav-link">Contact</a>
             </div>
             <div class="navbar-nav ms-auto">
@@ -30,7 +29,7 @@
                 <a href="{{route("register")}}" class="nav-item nav-link">Register</a>
                 <a href="{{route("login")}}" class="nav-item nav-link">Login</a>
                 @else
-                <a href="" class="nav-item nav-link">{{auth()->user()->username}}</a>
+                <a href="{{route("about")}}" class="nav-item nav-link">{{auth()->user()->username}}</a>
                 <a class="nav-item nav-link" href="{{ route('logout') }}">Logout</a>
                 @endguest
             </div>

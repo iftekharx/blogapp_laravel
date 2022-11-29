@@ -9,6 +9,8 @@ use App\Models\User;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Hash;
 use App\Models\Blog;
+use Illuminate\Validation\Validator; 
+
 
 
 class BlogController extends Controller
@@ -39,11 +41,13 @@ class BlogController extends Controller
     }
 
     public function post_blog(Request $request){
-        $request->validate([
+         $request->validate([
             'title' => 'required',
             'username' => auth()->user()->username,
             'body' => 'required',
         ]);
+
+      
 
         Blog::create([
             "title" => $request['title'],

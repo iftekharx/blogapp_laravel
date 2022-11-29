@@ -13,12 +13,14 @@
                         <form action="{{ route('post-blog') }}" method="POST">
                             @csrf
                             <div class="form-group row">
+                                
+                                    <li class="form-control custom-li">Please insert the fields before posting.</li>
+                            
                                 <label for="title" class="col-md-4 col-form-label text-md-right">Title</label>
                                 <div class="col-md-6">
-                                    <input type="text" id="title" class="form-control" name="title" required autofocus>
-                                    @if ($errors->has('title'))
-                                        <span class="text-danger">{{ $errors->first('title') }}</span>
-                                    @endif
+                                    <input type="text" id="title" class="form-control" name="title"/>
+                                    
+                                    
                                 </div>
                             </div>
 
@@ -27,9 +29,7 @@
                                 <div class="form-group row">
          
                                     <textarea class="form-control textarea custom-textarea" id="body" class="form-control" name="body"></textarea>
-                                        @if ($errors->has('body'))
-                                        <span class="text-danger">{{ $errors->first('body') }}</span>
-                                    @endif
+                                    
                                 </div>
                                 </div>
                             

@@ -31,6 +31,7 @@ class UserFactory extends Factory
             'email' => "iftekhar@gmail.com",
             'email_verified_at' => now(),
             'password' => Hash::make('123456'), 
+            'image' => 'profile_pics/pic1.jfif',
             'remember_token' => Str::random(10),
         ];
     }

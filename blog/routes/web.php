@@ -27,3 +27,5 @@ Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('blogget', [BlogController::class, 'particular_blog'])->name('blogfetch'); 
 Route::get('create-blog', [BlogController::class, 'create_blog'])->name('create-blog'); 
 Route::post('blog-post', [BlogController::class, 'post_blog'])->name('post-blog'); 
+
+Route::get('about', [AuthController::class, 'about'])->name('about');
